@@ -24,11 +24,12 @@
 //----------------------------------------------------------------------------------------
 // History:
 //----------------------------------------------------------------------------------------
-// version 1.0 (7 may 2011) first release
+// version 1.0 (7 may 2012) first release
 // compiled by: http://arantius.com/misc/greasemonkey/script-compiler
 //----------------------------------------------------------------------------------------
 
 function getNationalizedData(source){
+	/*
 	var nationalized = source;
 	var bankNamesAr = nationalized.split(',');
 	var foundNationalizedBank = false;
@@ -39,16 +40,16 @@ function getNationalizedData(source){
 		if( url.indexOf(bankNamesAr[i])!=-1){
 			foundNationalizedBank = true;
 			bankName = bankNamesAr[i]; 
-			getTotalImages(bankName);
+			//getTotalImages(bankName);
 			break;
 		}
 	}
-	
+	*/
 	// if not found a nationalized bank
-	if(!foundNationalizedBank){
+	//if(!foundNationalizedBank){
 		bankName = "otros";
 		getTotalImages(bankName);
-	}
+	//}
 	
 }
 
@@ -92,7 +93,7 @@ function showData(totalImages)
 {	
 	// limits to display images
 	var totalImagesInt = parseInt(totalImages);
-	var totalImagesScreen = 10;
+	var totalImagesScreen = 5;
 	if(totalImagesScreen>totalImagesInt) totalImagesScreen = totalImagesInt;
 	totalImagesScreen = 3+Math.floor(Math.random()*(totalImagesScreen-3));
 	
@@ -177,7 +178,7 @@ function getNationalizedBankNames()
 var bankName = "";
 
 // start process
-getNationalizedBankNames();
+//getNationalizedBankNames();
 
 // refresh page each 30 seconds 
 setTimeout("location.reload(true);",60000);

@@ -31,6 +31,8 @@
 // @include        https://www.cajaespana.es/*
 // @include        https://www.lacaixa.es/*
 // @include        http://www.lacaixa.es/*
+// @include        http://portal.lacaixa.es/*
+// @include        https://portal.lacaixa.es/*
 // @include        http://www.caixapenedes.com/*
 // @include        https://www.caixapenedes.com/*
 // @include        http://www.bankinter.com/*
