@@ -60,7 +60,7 @@ function getTotalImages(bankName)
 	
 	try{
 		// Create a URL that searches the torrent site, ordered by amount of seeds  
-		var newlink = 'http://derivart.info/hackyourbank/irland/totalImages.php?bank='+bankName;
+		var newlink = 'http://derivart.es/hackyourbank/irland/totalImages.php?bank='+bankName;
 		// Go fetch the source code of the torrent search page
 		GM_xmlhttpRequest(
 		{
@@ -120,7 +120,7 @@ function showData(totalImages)
 	// Add new images
 	var images ="";
 	for(var i=0;i<totalImagesScreen;i++){
-		var imagePath = 'http://derivart.info/hackyourbank/irland/imageId.php?bank='+bankName+"&id="+idAr[i];
+		var imagePath = 'http://derivart.es/hackyourbank/irland/imageId.php?bank='+bankName+"&id="+idAr[i];
 		var image = "<img src=\""+imagePath+"\">";
 		images += image;
 	}
@@ -147,7 +147,7 @@ function getNationalizedBankNames()
 	//Load nationalized banks
 	try{
 		// Create a URL that searches the torrent site, ordered by amount of seeds  
-		var newlink = 'http://derivart.info/hackyourbank/irland/nationalized.txt';
+		var newlink = 'http://derivart.es/hackyourbank/irland/nationalized.txt';
 		// Go fetch the source code of the torrent search page
 		GM_xmlhttpRequest(
 		{
